@@ -43,12 +43,11 @@ function writeCards(nameList,event){
 
 
 
-    for ( i = 0; i < nameList.length; i++){
-        namesArray(nameList[i])
-        console.log(`Thank you, ${nameList[i]}, for the wonderful ${event} gift`);
-        debugger;
+    for ( let i = 0; i < nameList.length; i++){
+        nameList[i]  = `Thank you, ${nameList[i]}, for the wonderful ${event} gift!`;
+        // debugger;
     }
-    return nameList, event;
+    return nameList;
 
 }
 
